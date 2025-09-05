@@ -4,11 +4,23 @@
         /* Regra 1: Seletor de TAG (Especificidade = 1 ponto) */
         /* Continuar 1ª digitação (Aqui) */
 
+        p{
+            color: blue !important;
+        }
+
         /* Regra 2: Seletor de CLASSE (Especificidade = 10 pontos) */
         /* Continuar 2ª digitação (Aqui) */
 
+.texto-importante{
+    color: green;
+}
+
         /* Regra 3: Seletor de ID (Especificidade = 100 pontos) */
         /* Continuar 3ª digitação (Aqui) */
+
+        #paragrafo-unico{
+            color: red;
+        }
 
     </style>
 </head>

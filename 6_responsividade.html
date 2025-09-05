@@ -2,8 +2,29 @@
     <title>Exemplo de Media Query com Flexbox</title>
     <style>
 
+.container-responsivo {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
-    /* Continuar 1ª digitação (Aqui) */
+.item-responsivo{
+    background-color: #ffc107;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+@media screen (max-width: 768px){
+    .container-responsivo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.item-responsivo{
+    width: 100%;
+}
 
 
 
